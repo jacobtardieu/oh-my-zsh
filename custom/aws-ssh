@@ -38,5 +38,5 @@ function aws-ssh() {
     aws_ip=`aws-get-ip $aws_host`
   fi
   echo "Connecting to $aws_ip"
-  ssh -o "ProxyCommand ssh -W %h:%p $nat" $aws_ip $*
+  ssh -o "ProxyCommand ssh -W %h:%p $nat" $aws_ip $* -t 'sudo -u admin -i'
 }
