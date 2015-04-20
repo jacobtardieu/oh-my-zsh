@@ -83,4 +83,6 @@ if [ -f $HOME/.alias ]; then
   . $HOME/.alias
 fi
 
+alias s="$HOME/.oh-my-zsh/custom/auto-sudo.sh"
+
 source $HOME/.oh-my-zsh/custom/aws-ssh
